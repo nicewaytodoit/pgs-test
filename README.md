@@ -136,8 +136,23 @@ Your branch is ahead of 'origin/master' by 1 commit.
 * 56fe189 (origin/master, origin/HEAD) Create Index.html
 * e69718a Initial commit
 
-(master -> origin)
-λ
+## Pushing branches and change to GitHub
+
+λ git status
+(master -> origin) λ git push
+λ git checkout myorphantest1
+(myorphantest1 -> origin) λ git status
+
+(myorphantest1 -> origin) λ git push
+fatal: The current branch myorphantest1 has no upstream branch.
+
+(myorphantest1 -> origin) λ git push --set-upstream origin myorphantest1
+λ git branch -avv
+λ git log --oneline
+λ git status
+
+(master -> origin) λ git checkout master
+λ git log --oneline
+λ git status
+
 ```
-
-
